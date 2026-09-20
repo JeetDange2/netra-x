@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --mine-bg: #0A0F1D;
+    --mine-surface: #0F172A;
+    --mine-card: #141E34;
+  }
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0F1D;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E2D4D;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #2D4370;
+}
+
+/* Tactical HUD Scanline & CRT Effect */
+.tactical-scanlines {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.35) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+  pointer-events: none;
+}
+
+/* Grid Crosshair Background */
+.grid-crosshair {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(30, 45, 77, 0.4) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(30, 45, 77, 0.4) 1px, transparent 1px);
+}
+
+/* Glowing Elements */
+.glow-safe {
+  box-shadow: 0 0 15px rgba(16, 185, 129, 0.25);
+}
+.glow-warning {
+  box-shadow: 0 0 15px rgba(245, 158, 11, 0.25);
+}
+.glow-danger {
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.35);
+}
+.glow-survivor {
+  box-shadow: 0 0 20px rgba(249, 115, 22, 0.4);
+}
+.glow-rover {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.3);
+}
+
+/* Radar Sweep Animation */
+@keyframes radar-sweep {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-radar {
+  animation: radar-sweep 4s linear infinite;
+}
