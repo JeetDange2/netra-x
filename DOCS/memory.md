@@ -831,11 +831,13 @@ Created project documentation:
 # 25. Current Project Status
 
 ## Overall Status
-**Frontend Surface Control Command Center Dashboard fully implemented and operational.**
+**Frontend Surface Control Command Center Dashboard fully deployed and live on Cloudflare Pages.**
+**Live Public URL:** [https://netra-x.pages.dev/](https://netra-x.pages.dev/)  
+**GitHub Repository:** [https://github.com/JeetDange2/netra-x](https://github.com/JeetDange2/netra-x)
 
 The project currently has:
 - Defined problem, rover architecture, AI strategy, and robotics stack
-- Fully interactive React + Vite + Tailwind CSS Surface Control Dashboard
+- Fully interactive React + Vite + Tailwind CSS Surface Control Dashboard deployed live to production edge
 - Live multi-sensor environmental telemetry with sparklines and safety thresholds
 - Multi-camera optic viewer with RGB, Thermal FLIR false color, and Night Vision green phosphor
 - Simulated YOLOv8n person detection HUD with 91% visual confidence + 36.8°C thermal core hotspot confirmation
@@ -1016,6 +1018,11 @@ Current MVP should be described as **semi-autonomous with manual override**.
 ## Decision — Dashboard
 **Current:** React + Vite + Tailwind, simulation-first, later connect to real MQTT/WebSocket data.
 
+## Decision — Hosting & Deployment
+**Current:** Deployed on Cloudflare Pages via GitHub repository `JeetDange2/netra-x`.
+**Live URL:** https://netra-x.pages.dev/
+**Reason:** Ultra-fast global edge hosting, automatic CI/CD rebuilds on `main` branch push.
+
 ---
 
 # 30. Agent Update Protocol
@@ -1102,8 +1109,8 @@ Only store information that helps continue development.
 
 # 31. Latest Memory Update
 
-**Current Stage:** Frontend Surface Control Dashboard completed and running live on Vite dev server (`http://localhost:5174/`).
+**Current Stage:** Frontend Surface Control Dashboard deployed live to production on Cloudflare Pages ([https://netra-x.pages.dev/](https://netra-x.pages.dev/)).
 
-**Latest Completed Task:** Developed and verified the complete React + Vite + Tailwind CSS Surface Control Command Center website with multi-modal cameras (RGB, Thermal FLIR, Night Vision), 2D SLAM interactive mine map, environmental telemetry sparklines, AI YOLOv8n survivor detection, risk-aware mission planner, teleoperation deck with 5-step self-recovery, and simulation triggers.
+**Latest Completed Task:** Pushed complete codebase to GitHub repository ([JeetDange2/netra-x](https://github.com/JeetDange2/netra-x)) and deployed to Cloudflare Pages edge hosting. Verified live functionality including multi-modal camera viewing, 2D SLAM interactive mine map, environmental telemetry sparklines, AI YOLOv8n survivor detection, risk planner, and emergency simulation scenarios.
 
 **Next Recommended Task:** Prepare hardware firmware (ESP32) and backend FastAPI / MQTT broker integration to bridge real physical sensor telemetry to the dashboard.
