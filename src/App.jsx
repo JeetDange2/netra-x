@@ -17,19 +17,19 @@ const DashboardContent = () => {
   const { activeTab } = useMission();
 
   return (
-    <div className="flex-1 overflow-y-auto p-4 space-y-4 max-w-[1800px] mx-auto w-full">
-      {/* 1. If Overview Tab */}
+    <div className="flex-1 overflow-y-auto p-3 sm:p-4 space-y-4 max-w-[1920px] mx-auto w-full">
+      {/* 1. Command Overview Tab */}
       {activeTab === 'dashboard' && (
         <>
           {/* Top Status Cards */}
           <RoverStatusCards />
 
-          {/* Primary Viewports Grid: Camera on Left, SLAM Map on Right */}
-          <div className="grid grid-cols-1 xl:grid-cols-12 gap-4">
-            <div className="xl:col-span-6 h-[420px]">
+          {/* Primary Viewports Grid: Camera on Left, 3D/2D SLAM Map on Right */}
+          <div className="grid grid-cols-1 xl:grid-cols-12 gap-3 sm:gap-4">
+            <div className="xl:col-span-6 min-h-[440px] h-[480px] lg:h-[520px]">
               <CameraPanel />
             </div>
-            <div className="xl:col-span-6 h-[420px]">
+            <div className="xl:col-span-6 min-h-[440px] h-[480px] lg:h-[520px]">
               <MineMap />
             </div>
           </div>
@@ -38,7 +38,7 @@ const DashboardContent = () => {
           <EnvironmentalPanel />
 
           {/* Survivor Detection & Risk Planner Grid */}
-          <div className="grid grid-cols-1 xl:grid-cols-12 gap-4">
+          <div className="grid grid-cols-1 xl:grid-cols-12 gap-3 sm:gap-4">
             <div className="xl:col-span-5">
               <SurvivorPanel />
             </div>
@@ -48,11 +48,11 @@ const DashboardContent = () => {
           </div>
 
           {/* Rover Teleoperation Controls & Mission Log / Alerts Grid */}
-          <div className="grid grid-cols-1 xl:grid-cols-12 gap-4">
+          <div className="grid grid-cols-1 xl:grid-cols-12 gap-3 sm:gap-4">
             <div className="xl:col-span-6">
               <RoverControls />
             </div>
-            <div className="xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="xl:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4">
               <AlertsPanel />
               <MissionLog />
             </div>
@@ -63,17 +63,17 @@ const DashboardContent = () => {
       {/* 2. Expanded Camera & Vision Tab */}
       {activeTab === 'camera' && (
         <div className="space-y-4">
-          <div className="h-[600px]">
+          <div className="h-[640px] lg:h-[700px]">
             <CameraPanel />
           </div>
           <SurvivorPanel />
         </div>
       )}
 
-      {/* 3. Expanded SLAM Mine Map Tab */}
+      {/* 3. Expanded 3D SLAM Mine Map Tab */}
       {activeTab === 'map' && (
         <div className="space-y-4">
-          <div className="h-[620px]">
+          <div className="h-[680px] lg:h-[750px]">
             <MineMap />
           </div>
           <RiskPlanner />
@@ -85,8 +85,12 @@ const DashboardContent = () => {
         <div className="space-y-4">
           <EnvironmentalPanel />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <MineMap />
-            <AlertsPanel />
+            <div className="h-[480px]">
+              <MineMap />
+            </div>
+            <div className="h-[480px]">
+              <AlertsPanel />
+            </div>
           </div>
         </div>
       )}
@@ -96,7 +100,9 @@ const DashboardContent = () => {
         <div className="space-y-4">
           <RiskPlanner />
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-            <MineMap />
+            <div className="h-[480px]">
+              <MineMap />
+            </div>
             <RoverControls />
           </div>
         </div>
@@ -107,15 +113,15 @@ const DashboardContent = () => {
         <div className="space-y-4">
           <RoverControls />
           <div className="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            <div className="h-[420px]"><CameraPanel /></div>
-            <div className="h-[420px]"><MineMap /></div>
+            <div className="h-[480px]"><CameraPanel /></div>
+            <div className="h-[480px]"><MineMap /></div>
           </div>
         </div>
       )}
 
       {/* 7. Expanded Alerts & Logs Tab */}
       {activeTab === 'logs' && (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 min-h-[600px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 min-h-[640px]">
           <AlertsPanel />
           <MissionLog />
         </div>
@@ -132,7 +138,7 @@ const DashboardContent = () => {
 export default function App() {
   return (
     <MissionProvider>
-      <div className="min-h-screen bg-mine-darkest text-mine-text flex flex-col font-sans">
+      <div className="min-h-screen bg-mine-darkest text-mine-text flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
         <TopStatusBar />
         <div className="flex flex-1 overflow-hidden">
           <Sidebar />
