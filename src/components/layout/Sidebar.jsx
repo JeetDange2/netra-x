@@ -39,7 +39,7 @@ export const Sidebar = () => {
   ];
 
   return (
-    <aside className={`bg-mine-surface border-r border-mine-border flex flex-col justify-between shrink-0 transition-all duration-300 h-[calc(100vh-57px)] sticky top-[57px] select-none ${
+    <aside className={`bg-mine-surface border-r border-mine-border flex flex-col justify-between shrink-0 transition-all duration-300 h-full select-none ${
       collapsed ? 'w-16' : 'w-60 lg:w-64'
     }`}>
       {/* Navigation Links */}

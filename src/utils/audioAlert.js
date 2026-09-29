@@ -1,4 +1,4 @@
-// Tactical Web Audio API Sound Synthesizer for NETRA-X Surface Command
+// Tactical Web Audio API Sound Synthesizer for Netra.X. Surface Command
 // Generates clean, futuristic HUD audio feedback without external asset dependencies
 
 class SoundEffects {

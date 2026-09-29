@@ -1,6 +1,6 @@
 Create a clean, professional, functional Surface Control Dashboard for my project:
 
-PROJECT NAME: NETRA-X
+PROJECT NAME: Netra.X.
 PROJECT: AI-Powered Mine Safety & Rescue Rover
 
 PURPOSE:

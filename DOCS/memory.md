@@ -1111,6 +1111,6 @@ Only store information that helps continue development.
 
 **Current Stage:** Frontend Surface Control Dashboard deployed live to production on Cloudflare Pages ([https://netra-x.pages.dev/](https://netra-x.pages.dev/)).
 
-**Latest Completed Task:** Pushed complete codebase to GitHub repository ([JeetDange2/netra-x](https://github.com/JeetDange2/netra-x)) and deployed to Cloudflare Pages edge hosting. Verified live functionality including multi-modal camera viewing, 2D SLAM interactive mine map, environmental telemetry sparklines, AI YOLOv8n survivor detection, risk planner, and emergency simulation scenarios.
+**Latest Completed Task:** Rebranded project display name to "Netra.X." across dashboard, metadata, 2D/3D mine SLAM viewports, architecture docs, and telemetry modules. Fixed sidebar layout by eliminating the redundant 57px sticky offset and calc height, properly scoping full-height flex column and overflow boundaries so the Operations Deck sits flush and neatly aligned at the top of the sidebar.
 
 **Next Recommended Task:** Prepare hardware firmware (ESP32) and backend FastAPI / MQTT broker integration to bridge real physical sensor telemetry to the dashboard.

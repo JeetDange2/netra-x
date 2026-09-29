@@ -138,7 +138,7 @@ const DashboardContent = () => {
 export default function App() {
   return (
     <MissionProvider>
-      <div className="min-h-screen bg-mine-darkest text-mine-text flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200">
+      <div className="h-screen bg-mine-darkest text-mine-text flex flex-col font-sans selection:bg-cyan-500/30 selection:text-cyan-200 overflow-hidden">
         <TopStatusBar />
         <div className="flex flex-1 overflow-hidden">
           <Sidebar />

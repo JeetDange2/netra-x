@@ -22,7 +22,7 @@ export const MissionProvider = ({ children }) => {
 
   // Rover Status
   const [roverState, setRoverState] = useState({
-    id: 'NETRA-X-01',
+    id: 'Netra.X.-01',
     battery: 74,
     batteryVoltage: 24.2,
     speed: 0.42, // m/s

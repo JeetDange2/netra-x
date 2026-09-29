@@ -19,7 +19,7 @@ export const ArchitectureViewer = () => {
     },
     {
       q: "What is Risk-Aware Navigation instead of standard shortest-path?",
-      a: "Standard A* finds the shortest geometric distance. NETRA-X's Risk-Aware Mission Planner calculates a weighted Mission Risk Score incorporating gas concentration (35%), obstacles (20%), RF comms strength (15%), environmental heat/flooding (15%), and battery energy to return (15%). It selects the safest viable route."
+      a: "Standard A* finds the shortest geometric distance. Netra.X.'s Risk-Aware Mission Planner calculates a weighted Mission Risk Score incorporating gas concentration (35%), obstacles (20%), RF comms strength (15%), environmental heat/flooding (15%), and battery energy to return (15%). It selects the safest viable route."
     },
     {
       q: "What happens if AI or communications fail underground?",
@@ -41,7 +41,7 @@ export const ArchitectureViewer = () => {
           <Cpu className="w-5 h-5 text-cyan-400" />
           <div>
             <h2 className="text-sm font-bold text-white uppercase tracking-wider">
-              NETRA-X System Architecture &amp; Engineering Specifications
+              Netra.X. System Architecture &amp; Engineering Specifications
             </h2>
             <p className="text-[11px] text-mine-muted">
               Official Technical Documentation &amp; Evaluation Reference (SIH 2026 Standards)

@@ -360,7 +360,7 @@ export const RiskPlanner = () => {
       <div className="bg-mine-darkest/75 border border-mine-border rounded-xl p-3 text-xs text-mine-subtext flex items-start gap-2.5">
         <ShieldCheck className="w-5 h-5 text-cyan-400 shrink-0 mt-0.5" />
         <div className="leading-relaxed">
-          <strong className="text-white">Human-in-the-Loop Mission Governance:</strong> NETRA-X uses multi-factor deterministic A* costmaps. Autonomous navigation suggestions are presented to the surface safety officer with an explainable risk breakdown. Rescue personnel retain complete operational override authority before entry into high-risk mine sections.
+          <strong className="text-white">Human-in-the-Loop Mission Governance:</strong> Netra.X. uses multi-factor deterministic A* costmaps. Autonomous navigation suggestions are presented to the surface safety officer with an explainable risk breakdown. Rescue personnel retain complete operational override authority before entry into high-risk mine sections.
         </div>
       </div>
     </div>

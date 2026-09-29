@@ -358,7 +358,7 @@ export const MineMap3D = ({ onToggle2D }) => {
     pointsRef.current = pointCloud;
 
     // ==========================================
-    // 8. Procedural 3D NETRA-X Rover Model
+    // 8. Procedural 3D Netra.X. Rover Model
     // ==========================================
     const roverGroup = new THREE.Group();
     roverGroupRef.current = roverGroup;
@@ -864,7 +864,7 @@ export const MineMap3D = ({ onToggle2D }) => {
           <div className="flex items-center justify-between border-b border-mine-border pb-1">
             <span className="font-bold text-cyan-400 flex items-center gap-1.5">
               <Crosshair className="w-3.5 h-3.5" />
-              NETRA-X POSE [3D SLAM]
+              Netra.X. POSE [3D SLAM]
             </span>
             <span className="text-[10px] text-emerald-400 font-semibold">ODOMETRY: 98.6%</span>
           </div>
@@ -973,7 +973,7 @@ export const MineMap3D = ({ onToggle2D }) => {
           </div>
           <div className="flex items-center gap-2 text-cyan-400">
             <div className="w-2.5 h-2.5 rounded-full bg-cyan-400 ring-2 ring-cyan-500/40"></div>
-            <span>NETRA-X Rover with Active Spotlights</span>
+            <span>Netra.X. Rover with Active Spotlights</span>
           </div>
           <div className="flex items-center gap-2 text-emerald-400">
             <div className="w-4 h-1 rounded bg-emerald-400"></div>

@@ -337,9 +337,9 @@ export const MineMap = () => {
             <circle cx="0" cy="0" r="7" fill="#0284c7" stroke="#ffffff" strokeWidth="2" />
 
             <g transform="translate(-40, 20)">
-              <rect width="80" height="18" rx="3" fill="#080e1a" stroke="#0284c7" strokeWidth="1" />
-              <text x="40" y="13" fill="#38bdf8" fontSize="9" fontFamily="monospace" fontWeight="bold" textAnchor="middle">
-                NETRA-X (0.4 m/s)
+              <rect width="84" height="18" rx="3" fill="#080e1a" stroke="#0284c7" strokeWidth="1" />
+              <text x="42" y="13" fill="#38bdf8" fontSize="9" fontFamily="monospace" fontWeight="bold" textAnchor="middle">
+                Netra.X. (0.4 m/s)
               </text>
             </g>
           </g>
@@ -365,7 +365,7 @@ export const MineMap = () => {
           </div>
           <div className="flex items-center gap-2 text-cyan-400">
             <div className="w-2.5 h-2.5 rounded-full bg-cyan-400"></div>
-            <span>Rover Position (NETRA-X)</span>
+            <span>Rover Position (Netra.X.)</span>
           </div>
           <div className="flex items-center gap-2 text-emerald-400">
             <div className="w-4 h-1 rounded bg-emerald-400"></div>

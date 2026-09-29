@@ -81,7 +81,7 @@ export const TopStatusBar = () => {
   };
 
   return (
-    <header className="bg-mine-surface border-b border-mine-border px-3 sm:px-4 py-2 flex items-center justify-between gap-2 sm:gap-4 sticky top-0 z-40 shadow-lg select-none">
+    <header className="bg-mine-surface border-b border-mine-border px-3 sm:px-4 py-2 flex items-center justify-between gap-2 sm:gap-4 shrink-0 z-40 shadow-lg select-none">
       {/* Brand & Mission Identification */}
       <div className="flex items-center gap-2.5 sm:gap-3 shrink-0">
         <div className="relative flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-lg bg-gradient-to-br from-cyan-600 to-blue-900 border border-cyan-400/40 shadow-lg shadow-cyan-950/50">
@@ -95,7 +95,7 @@ export const TopStatusBar = () => {
         <div>
           <div className="flex items-center gap-1.5 sm:gap-2">
             <h1 className="text-sm sm:text-base font-bold tracking-wider text-white flex items-center gap-1.5 font-mono">
-              NETRA-X
+              Netra.X.
               <span className="text-[10px] sm:text-xs px-1.5 py-0.5 rounded font-mono font-semibold bg-cyan-950/80 text-cyan-400 border border-cyan-800/80 shadow-sm">
                 SURFACE COMMAND
               </span>
